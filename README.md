@@ -49,7 +49,7 @@ About reading file in Python, can use either:
 
 ```
 with open("user_pass.txt", "r") as f: 
-content = f.readlines()
+    content = f.readlines()
 ```
 
 or
