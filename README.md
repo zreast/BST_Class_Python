@@ -19,12 +19,12 @@ class BST:
 
     def insert_node(self, current_node, new_node):
         if (new_node.username <= current_node.username):
-            if (current_node.left):
+            if (current_node.left is not None):
                 self.insert_node(current_node.left, new_node)
             else:
                 current_node.left = new_node
         elif (new_node.username > current_node.username):
-            if (current_node.right):
+            if (current_node.right is not None):
                 self.insert_node(current_node.right, new_node)
             else:
                 current_node.right = new_node
