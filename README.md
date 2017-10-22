@@ -1,3 +1,4 @@
+```
 class Node:
     def __init__(self, username_in, password_in):
         self.username = username_in
@@ -40,18 +41,23 @@ class BST:
             return self.find_node(current_node.left, username)
         else:
             return self.find_node(current_node.right, username)
+```
 
 read “user_pass.txt” file contains username and password to create an order by username BST, using recursion to insert or find any node. 
 
 About reading file in Python, can use either:
 
+```
 with open("user_pass.txt", "r") as f: 
 content = f.readlines()
+```
 
 or
 
+```
 file = open("user_pass.txt", "r")
 for i in file:
     content.append(i)
+```
 
 ‘content’ will become lists of each line
